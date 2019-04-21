@@ -16,6 +16,6 @@ mongoose.connect('mongodb+srv://dbGunjan:030893*g@cluster0-zjnx9.mongodb.net/for
 
 
 
-app.listen(3000, () => {
-    console.log("Node Server started at 3000")
+app.listen(process.env.PORT || 3000, () => {
+    console.log("Node Server started at", process.env.PORT)
 })
